@@ -1,2 +1,1 @@
-# CloudPoint
-A weather web app
+# WeatherApp

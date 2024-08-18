@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon link -->
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <form action="#">
+            <input id="city-name" type="text" placeholder="City name">
+            <input type="submit" value="Submit">
+            <button id="current-location">Current location</button>
+        </form>
+        
+        <div class="controls">
+            <label for="unit-toggle"><b>Temperature Unit:</b></label>
+            <select id="unit-toggle">
+                <option value="metric" selected>Celsius</option>
+                <option value="imperial">Fahrenheit</option>
+            </select>
+        </div>
+
+        <div class="weather-data">
+            <div class="icon">
+                <!-- Weather icon will be inserted here -->
+            </div>
+            <div class="temp">
+                <!-- Temperature data will be inserted here -->
+            </div>
+            <div class="desc">
+                <!-- Weather description will be inserted here -->
+            </div>
+            <div class="details">
+                <!-- Additional weather details will be inserted here -->
+            </div>
+        </div>
+
+        <button id="forecast-btn">Upcoming Weather List</button>
+        <div id="forecast-container">
+            <!-- Forecast data will be inserted here -->
+        </div>
+        
+        <!-- Live Map Section -->
+        <div class="map-container">
+            <h2>Live Map View</h2>
+            <div id="map"></div> <!-- The map will be rendered here -->
+        </div>
+        <div class="search-history">
+            <h2>Search History</h2>
+            <ul id="history-list">
+                <!-- Search history items will be inserted here -->
+            </ul>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <button type="button" id="scroll-to-top" title="scroll to Top">↑</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
